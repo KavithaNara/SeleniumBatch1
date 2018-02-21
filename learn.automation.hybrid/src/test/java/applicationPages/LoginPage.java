@@ -1,47 +1,50 @@
 package applicationPages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class LoginPage 
-{
-	
-	//@FindBy(id="txtUsername") WebElement username;
-	@FindBy(how = How.ID, using = "txtUsername") WebElement username;
-	
-	@FindBy(name="txtPassword") WebElement password;
+import helper.Utility;
 
-	@FindBy(xpath="//input[@name='Submit']") WebElement loginButton;
+public class LoginPage {
 
-	
-	public void enterUsername(String user)
-	{
-		username.sendKeys(user);
+	WebDriver driver;
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
 	}
-	
-	public void enterPassword(String pass)
-	{
-		password.sendKeys(pass);
+
+	// @FindBy(id="txtUsername") WebElement username;
+	@FindBy(how = How.ID, using = "txtUsername")
+	WebElement username;
+
+	@FindBy(name = "txtPassword")
+	WebElement password;
+
+	@FindBy(xpath = "//input[@name='Submit']")
+	WebElement loginButton;
+
+	public void enterUsername(String user) {
+		// username.sendKeys(user);
+		Utility.waitforwebelement(driver, username, 20).sendKeys(user);
 	}
-	
-	
-	public void clickOnLoginButton()
-	{
-		loginButton.click();
+
+	public void enterPassword(String pass) {
+		// password.sendKeys(pass);
+		Utility.waitforwebelement(driver, password, 20).sendKeys(pass);
 	}
-	
-	public void loginToCRMApplication()
-	{
+
+	public void clickOnLoginButton() {
+		// loginButton.click();
+		Utility.waitforwebelement(driver, loginButton, 20).click();
+	}
+
+	public void loginToCRMApplication() {
 		username.sendKeys("Admin");
 		password.sendKeys("admin");
 		loginButton.click();
-		
+
 	}
-	
-	
-	
-	
-	
-	
+
 }
