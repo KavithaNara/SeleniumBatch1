@@ -35,6 +35,7 @@ public class BaseClass {
 		driver = BrowserFactory.startApplication(browser, DataProviderFactory.getConfig().getTestApplicationURL());
 	}
 
+	
 	@AfterClass
 	public void terminateSession() {
 		driver.quit();

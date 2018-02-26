@@ -1,51 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-20T17:42:26Z" name="Suite" finished-at="2018-02-20T17:42:34Z" duration-ms="7512">
+  <suite name="Default suite" duration-ms="9884" started-at="2018-02-11T04:26:02Z" finished-at="2018-02-11T04:26:12Z">
     <groups>
     </groups>
-    <test started-at="2018-02-20T17:42:26Z" name="Test" finished-at="2018-02-20T17:42:34Z" duration-ms="7512">
-      <class name="applicationTestCases.LoginCRM">
-        <test-method is-config="true" signature="setupReprt()[pri:0, instance:applicationTestCases.LoginCRM@610f7aa]" started-at="2018-02-20T12:42:26Z" name="setupReprt" finished-at="2018-02-20T12:42:26Z" duration-ms="252" status="PASS">
+    <test name="Default test" duration-ms="9884" started-at="2018-02-11T04:26:02Z" finished-at="2018-02-11T04:26:12Z">
+      <class name="unitTestCase.VerifyLinks">
+        <test-method status="PASS" signature="testImages1()[pri:0, instance:unitTestCase.VerifyLinks@ae45eb6]" name="testImages1" duration-ms="9861" started-at="2018-02-11T09:56:02Z" finished-at="2018-02-11T09:56:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupReprt -->
-        <test-method is-config="true" signature="startSession(java.lang.String)[pri:0, instance:applicationTestCases.LoginCRM@610f7aa]" started-at="2018-02-20T12:42:26Z" name="startSession" finished-at="2018-02-20T12:42:31Z" duration-ms="4361" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSession -->
-        <test-method signature="loginAdmin()[pri:0, instance:applicationTestCases.LoginCRM@610f7aa]" started-at="2018-02-20T12:42:31Z" name="loginAdmin" finished-at="2018-02-20T12:42:32Z" duration-ms="1709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAdmin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:applicationTestCases.LoginCRM@610f7aa]" started-at="2018-02-20T12:42:32Z" name="tearDown" finished-at="2018-02-20T12:42:33Z" duration-ms="345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginAdmin status=SUCCESS method=LoginCRM.loginAdmin()[pri:0, instance:applicationTestCases.LoginCRM@610f7aa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="terminateSession()[pri:0, instance:applicationTestCases.LoginCRM@610f7aa]" started-at="2018-02-20T12:42:33Z" name="terminateSession" finished-at="2018-02-20T12:42:34Z" duration-ms="1092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminateSession -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:applicationTestCases.LoginCRM@610f7aa]" started-at="2018-02-20T12:42:34Z" name="tearDownReport" finished-at="2018-02-20T12:42:34Z" duration-ms="266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- applicationTestCases.LoginCRM -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testImages1 -->
+      </class> <!-- unitTestCase.VerifyLinks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

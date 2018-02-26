@@ -5,6 +5,7 @@
 	<artifactId>learn.automation.hybrid</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<dependencies>
 
 		<dependency>
@@ -68,13 +69,16 @@
 				<configuration>
 
 					<suiteXmlFiles>
-						<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
-					
+<!-- 
 					<systemPropertyVariables>
-					<RuntimeBrowser>${Browser}</RuntimeBrowser>
-					
-					</systemPropertyVariables>
+
+						<RuntimeBrowser>${Browser}</RuntimeBrowser>
+						<OSName>${OSName}</OSName>
+						<OSVersion>${version}</OSVersion>
+
+					</systemPropertyVariables> -->
 
 				</configuration>
 			</plugin>
